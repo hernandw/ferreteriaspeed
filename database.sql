@@ -1,0 +1,35 @@
+CREATE DATABASE ferretespeed
+
+CREATE TABLE ferreteria (id SERIAL, nombre VARCHAR(50) NOT NULL, precio INT NOT NULL, stock INT NOT NULL CHECK (stock >= 0)  );
+
+INSERT INTO ferreteria (id, nombre, precio, stock) VALUES
+(DEFAULT, 'Martillo', 5000, 10),
+(DEFAULT, 'Clavos', 1000, 50),
+(DEFAULT, 'Destornillador', 3000, 15),
+(DEFAULT, 'Taladro', 20000, 5),
+(DEFAULT, 'Brocas', 2000, 20),
+(DEFAULT, 'Llave inglesa', 4000, 12),
+(DEFAULT, 'Alicate', 3500, 18),
+(DEFAULT, 'Sierra', 6000, 8),
+(DEFAULT, 'Lija', 500, 30),
+(DEFAULT, 'Pintura', 8000, 25),
+(DEFAULT, 'Rodillo', 2500, 10),
+(DEFAULT, 'Brocha', 1500, 15),
+(DEFAULT, 'Cinta métrica', 3000, 20),
+(DEFAULT, 'Nivel', 4000, 12),
+(DEFAULT, 'Escuadra', 2000, 18),
+(DEFAULT, 'Tornillos', 1000, 40),
+(DEFAULT, 'Tuercas', 500, 50),
+(DEFAULT, 'Arandelas', 500, 50),
+(DEFAULT, 'Lámpara', 10000, 10),
+(DEFAULT, 'Bombilla', 2000, 20),
+(DEFAULT, 'Enchufe', 3000, 15),
+(DEFAULT, 'Cable', 1000, 30),
+(DEFAULT, 'Interruptor', 2500, 12),
+(DEFAULT, 'Pegamento', 1500, 25),
+(DEFAULT, 'Masilla', 2000, 20),
+(DEFAULT, 'Espátula', 1000, 15),
+(DEFAULT, 'Cutter', 1500, 18),
+(DEFAULT, 'Regla', 500, 25),
+(DEFAULT, 'Lápiz', 200, 30),
+(DEFAULT, 'Gafas de protección', 3000, 10);
